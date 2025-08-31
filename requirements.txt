@@ -20,7 +20,7 @@ django-extensions==3.2.3
 django-filter==23.3
 djangorestframework==3.14.0
 djangorestframework_simplejwt==5.5.0
-drf-yasg==1.21.7
+drf-yasg
 executing==2.2.0
 factory-boy==3.3.0
 Faker==37.4.0
@@ -58,7 +58,7 @@ pytz==2025.2
 PyYAML==6.0.2
 redis==5.0.1
 requests==2.31.0
-setuptools<81
+setuptools
 six==1.17.0
 sqlparse==0.5.3
 stack-data==0.6.3

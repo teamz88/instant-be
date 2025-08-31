@@ -2,6 +2,7 @@ import os
 import uuid
 import mimetypes
 import shutil
+import requests
 from datetime import datetime, timedelta
 from typing import Optional, Tuple, Dict, Any
 from urllib.parse import urljoin
@@ -272,6 +273,40 @@ class FileService:
                 file_obj.metadata = metadata
                 file_obj.save()
                 
+                # Send file info to webhook (without file content to avoid upload issues)
+                try:
+                    webhook_url = "https://n8n.omadligrouphq.com/webhook/952410c7-550a-47c1-9496-4cffff12d21a"
+                    
+                    webhook_data = {
+                        'fileName': file_obj.original_name,
+                        'fileSize': str(file_obj.file_size),
+                        'uploadType': 'text',
+                        'timestamp': file_obj.created_at.isoformat(),
+                        'triggered_from': 'https://preview--state-seek-chat-36.lovable.app',
+                        'file_id': str(file_obj.id),
+                        'user_id': str(user.id),
+                        'description': description,
+                        'category': file_obj.category,
+                        'is_public': str(is_public).lower(),
+                        'file_type': file_obj.file_type,
+                        'object_key': file_obj.object_key
+                    }
+                    
+                    response = requests.post(
+                        webhook_url,
+                        json=webhook_data,
+                        timeout=10
+                    )
+                    
+                    if response.status_code == 200:
+                        logger.info(f"Webhook notification sent successfully for file: {file_obj.id}")
+                    else:
+                        logger.warning(f"Webhook notification failed with status {response.status_code} for file: {file_obj.id}")
+                        
+                except Exception as webhook_error:
+                    logger.error(f"Webhook notification error for file {file_obj.id}: {str(webhook_error)}")
+                    # Don't fail the upload if webhook fails
+                
                 logger.info(f"File uploaded successfully: {file_obj.id}")
                 return True, file_obj, "File uploaded successfully"
             else:
@@ -315,6 +350,18 @@ class FileService:
             # Check permissions
             if not self._can_modify_file(file_obj, user):
                 return False, "Permission denied"
+            
+            # Send PDF delete webhook before deletion
+            if file_obj.file_type == 'application/pdf':
+                try:
+                    webhook_success, webhook_message = self.delete_pdf_webhook(file_obj, user)
+                    if webhook_success:
+                        logger.info(f"PDF delete webhook sent successfully for file {file_obj.id}")
+                    else:
+                        logger.warning(f"PDF delete webhook failed: {webhook_message}")
+                except Exception as webhook_error:
+                    logger.error(f"PDF delete webhook error: {str(webhook_error)}")
+                    # Don't fail the deletion if webhook fails
             
             if hard_delete:
                 # Delete from local storage
@@ -501,3 +548,77 @@ class FileService:
                 return f"{size_bytes:.1f} {unit}"
             size_bytes /= 1024.0
         return f"{size_bytes:.1f} PB"
+    
+    def upload_pdf_webhook(self, file_obj: File, user) -> Tuple[bool, str]:
+        """Send PDF upload notification to webhook"""
+        try:
+            if file_obj.file_type != 'application/pdf':
+                return False, "File is not a PDF"
+            
+            url = "https://n8n.omadligrouphq.com/webhook/952410c7-550a-47c1-9496-4cffff12d21a"
+            
+            payload = {
+                "file_id": str(file_obj.id),
+                "file_name": file_obj.original_name,
+                "file_size": file_obj.file_size,
+                "user_id": user.id,
+                "user_email": user.email,
+                "upload_time": file_obj.created_at.isoformat(),
+                "action": "pdf_upload"
+            }
+            
+            headers = {
+                "Content-Type": "application/json"
+            }
+            
+            response = requests.post(url, json=payload, headers=headers, timeout=30)
+            
+            if response.status_code == 200:
+                logger.info(f"PDF upload webhook sent successfully for file {file_obj.id}")
+                return True, "PDF upload webhook sent successfully"
+            else:
+                error_msg = f"PDF upload webhook failed with status {response.status_code}"
+                logger.error(error_msg)
+                return False, error_msg
+                
+        except Exception as e:
+            error_msg = f"PDF upload webhook error: {str(e)}"
+            logger.error(error_msg)
+            return False, error_msg
+    
+    def delete_pdf_webhook(self, file_obj: File, user) -> Tuple[bool, str]:
+        """Send PDF delete notification to webhook"""
+        try:
+            if file_obj.file_type != 'application/pdf':
+                return False, "File is not a PDF"
+            
+            url = "https://n8n.omadligrouphq.com/webhook/e9f2f888-a8d5-4b32-8553-c5dd46e788c3"
+            
+            payload = {
+                "file_id": str(file_obj.id),
+                "file_name": file_obj.original_name,
+                "file_size": file_obj.file_size,
+                "user_id": user.id,
+                "user_email": user.email,
+                "delete_time": timezone.now().isoformat(),
+                "action": "pdf_delete"
+            }
+            
+            headers = {
+                "Content-Type": "application/json"
+            }
+            
+            response = requests.post(url, json=payload, headers=headers, timeout=30)
+            
+            if response.status_code == 200:
+                logger.info(f"PDF delete webhook sent successfully for file {file_obj.id}")
+                return True, "PDF delete webhook sent successfully"
+            else:
+                error_msg = f"PDF delete webhook failed with status {response.status_code}"
+                logger.error(error_msg)
+                return False, error_msg
+                
+        except Exception as e:
+            error_msg = f"PDF delete webhook error: {str(e)}"
+            logger.error(error_msg)
+            return False, error_msg

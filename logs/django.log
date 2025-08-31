@@ -1,0 +1,748 @@
+INFO 2025-08-31 17:23:05,773 autoreload 53951 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 17:40:01,240 autoreload 57228 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 17:40:31,865 autoreload 57399 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 17:40:53,021 autoreload 57513 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 17:41:00,786 autoreload 57561 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 17:54:09,045 basehttp 57561 6156513280 "OPTIONS /api/auth/register/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:54:09,206 basehttp 57561 6156513280 "POST /api/auth/register/ HTTP/1.1" 201 1041
+INFO 2025-08-31 17:54:09,371 basehttp 57561 6156513280 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:54:09,378 basehttp 57561 6173339648 "OPTIONS /api/chat/folders/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:54:09,398 basehttp 57561 6190166016 "OPTIONS /api/auth/client-info/status/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:54:09,400 basehttp 57561 6206992384 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:54:09,404 basehttp 57561 6223818752 "OPTIONS /api/chat/folders/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:54:09,412 basehttp 57561 6156513280 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:54:09,414 basehttp 57561 6190166016 "GET /api/auth/client-info/status/ HTTP/1.1" 200 46
+INFO 2025-08-31 17:54:09,419 basehttp 57561 6173339648 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:54:09,431 basehttp 57561 6223818752 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:54:09,432 basehttp 57561 6190166016 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:54:09,441 basehttp 57561 6223818752 "GET /api/auth/client-info/status/ HTTP/1.1" 200 46
+INFO 2025-08-31 17:56:16,140 basehttp 57561 6190166016 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:16,142 basehttp 57561 6223818752 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:16,149 basehttp 57561 6173339648 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:16,154 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:37,890 basehttp 57561 6173339648 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:37,893 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:37,904 basehttp 57561 6223818752 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:37,905 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:39,756 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:39,761 basehttp 57561 6223818752 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:39,771 basehttp 57561 6190166016 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:39,771 basehttp 57561 6173339648 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:56:51,597 basehttp 57561 6190166016 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:56:51,608 basehttp 57561 6223818752 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:56:51,608 basehttp 57561 6173339648 "OPTIONS /api/auth/client-info/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:56:51,608 basehttp 57561 6156513280 "OPTIONS /api/auth/client-info/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:56:51,651 basehttp 57561 6190166016 "GET /api/auth/profile/ HTTP/1.1" 200 498
+INFO 2025-08-31 17:56:51,671 basehttp 57561 6156513280 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 17:56:51,676 basehttp 57561 6173339648 "GET /api/auth/profile/ HTTP/1.1" 200 498
+INFO 2025-08-31 17:56:51,685 basehttp 57561 6190166016 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 17:57:03,924 basehttp 57561 6190166016 "OPTIONS /api/auth/logout/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:57:03,933 basehttp 57561 6190166016 "POST /api/auth/logout/ HTTP/1.1" 200 31
+INFO 2025-08-31 17:59:33,851 basehttp 57561 6190166016 "OPTIONS /api/auth/login/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:34,056 basehttp 57561 6190166016 "POST /api/auth/login/ HTTP/1.1" 200 1069
+INFO 2025-08-31 17:59:34,386 basehttp 57561 6173339648 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:59:34,392 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:59:34,402 basehttp 57561 6156513280 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:59:34,410 basehttp 57561 6173339648 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:59:42,496 basehttp 57561 6156513280 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 17:59:42,496 basehttp 57561 6173339648 "GET /api/auth/profile/ HTTP/1.1" 200 523
+INFO 2025-08-31 17:59:42,508 basehttp 57561 6223818752 "GET /api/auth/profile/ HTTP/1.1" 200 523
+INFO 2025-08-31 17:59:42,511 basehttp 57561 6190166016 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 17:59:48,256 basehttp 57561 6223818752 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 17:59:48,256 basehttp 57561 6190166016 "GET /api/auth/profile/ HTTP/1.1" 200 523
+INFO 2025-08-31 17:59:48,271 basehttp 57561 6156513280 "GET /api/auth/profile/ HTTP/1.1" 200 523
+INFO 2025-08-31 17:59:48,275 basehttp 57561 6173339648 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 17:59:53,716 basehttp 57561 6190166016 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:53,719 basehttp 57561 6173339648 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:53,719 basehttp 57561 6223818752 "OPTIONS /api/chat/folders/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:53,723 basehttp 57561 6156513280 "OPTIONS /api/auth/client-info/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:53,726 basehttp 57561 6190166016 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:53,726 basehttp 57561 6173339648 "OPTIONS /api/chat/folders/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:53,728 basehttp 57561 6240645120 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:53,731 basehttp 57561 6257471488 "OPTIONS /api/auth/client-info/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:53,742 basehttp 57561 6223818752 "GET /api/auth/profile/ HTTP/1.1" 200 523
+INFO 2025-08-31 17:59:53,753 basehttp 57561 6156513280 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:59:53,756 basehttp 57561 6190166016 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 17:59:53,758 basehttp 57561 6257471488 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:59:53,759 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:59:53,760 basehttp 57561 6173339648 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:59:53,766 basehttp 57561 6223818752 "GET /api/auth/profile/ HTTP/1.1" 200 523
+INFO 2025-08-31 17:59:53,769 basehttp 57561 6156513280 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 17:59:54,382 basehttp 57561 6257471488 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:54,383 basehttp 57561 6240645120 "OPTIONS /api/chat/folders/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:54,385 basehttp 57561 6173339648 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:54,385 basehttp 57561 6190166016 "OPTIONS /api/auth/client-info/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:54,386 basehttp 57561 6223818752 "OPTIONS /api/auth/client-info/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:54,388 basehttp 57561 6156513280 "OPTIONS /api/auth/profile/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:54,389 basehttp 57561 6257471488 "OPTIONS /api/chat/folders/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:54,396 basehttp 57561 6156513280 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+INFO 2025-08-31 17:59:54,400 basehttp 57561 6240645120 "GET /api/auth/profile/ HTTP/1.1" 200 523
+INFO 2025-08-31 17:59:54,407 basehttp 57561 6190166016 "GET /api/auth/profile/ HTTP/1.1" 200 523
+INFO 2025-08-31 17:59:54,407 basehttp 57561 6173339648 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 17:59:54,410 basehttp 57561 6223818752 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:59:54,410 basehttp 57561 6257471488 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 17:59:54,417 basehttp 57561 6156513280 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:59:54,419 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 17:59:54,426 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:46,809 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:46,809 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:46,820 basehttp 57561 6156513280 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:46,824 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:48,451 basehttp 57561 6156513280 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:48,453 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:48,460 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:48,463 basehttp 57561 6156513280 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:49,006 basehttp 57561 6156513280 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:49,006 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:49,016 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:49,016 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:49,635 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:49,637 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:49,646 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:01:49,648 basehttp 57561 6156513280 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:00,115 basehttp 57561 6156513280 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:00,118 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:00,128 basehttp 57561 6156513280 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:00,128 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:01,509 basehttp 57561 6156513280 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:01,509 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:01,522 basehttp 57561 6223818752 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:01,522 basehttp 57561 6240645120 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:02,551 basehttp 57561 6223818752 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:02,554 basehttp 57561 6240645120 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:02,561 basehttp 57561 6156513280 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:02,565 basehttp 57561 6223818752 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:03,330 basehttp 57561 6156513280 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:03,331 basehttp 57561 6223818752 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:03,341 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:03,343 basehttp 57561 6223818752 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:04,019 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:04,019 basehttp 57561 6223818752 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:04,031 basehttp 57561 6156513280 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:04,033 basehttp 57561 6223818752 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:06,128 basehttp 57561 6156513280 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:06,133 basehttp 57561 6223818752 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:06,146 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:06,149 basehttp 57561 6156513280 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:06,847 basehttp 57561 6240645120 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:06,847 basehttp 57561 6156513280 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:06,861 basehttp 57561 6223818752 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:02:06,861 basehttp 57561 6190166016 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:03:11,579 basehttp 57561 6190166016 "POST /api/chat/conversations/ HTTP/1.1" 201 308
+INFO 2025-08-31 18:03:11,593 basehttp 57561 6223818752 "OPTIONS /api/chat/conversations/38d6aa56-72a4-4ce7-b379-bc6285304a5c/history/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:03:11,604 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 310
+INFO 2025-08-31 18:03:11,607 basehttp 57561 6223818752 "GET /api/chat/conversations/38d6aa56-72a4-4ce7-b379-bc6285304a5c/history/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:03:11,634 basehttp 57561 6223818752 "OPTIONS /api/chat/stream/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:03:11,645 views 57561 6223818752 ChatStreamView POST called by user: bro (bro sultan)
+INFO 2025-08-31 18:03:11,645 views 57561 6223818752 Request data: {'message': 'test', 'conversation_id': '38d6aa56-72a4-4ce7-b379-bc6285304a5c'}
+INFO 2025-08-31 18:03:11,647 views 57561 6223818752 Serializer validated data: OrderedDict({'message': 'test', 'conversation_id': UUID('38d6aa56-72a4-4ce7-b379-bc6285304a5c')})
+INFO 2025-08-31 18:03:11,648 views 57561 6223818752 Starting generate_stream function
+INFO 2025-08-31 18:03:11,648 views 57561 6223818752 About to call process_chat_message_stream
+INFO 2025-08-31 18:03:12,387 services 57561 6223818752 Finished processing 0 lines
+INFO 2025-08-31 18:03:12,389 views 57561 6223818752 Stream completed with 0 chunks
+INFO 2025-08-31 18:03:12,390 basehttp 57561 6223818752 "POST /api/chat/stream/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:04:03,348 basehttp 57561 6223818752 "GET /api/chat/conversations/38d6aa56-72a4-4ce7-b379-bc6285304a5c/history/ HTTP/1.1" 200 819
+INFO 2025-08-31 18:04:04,313 basehttp 57561 6223818752 "GET /api/chat/conversations/38d6aa56-72a4-4ce7-b379-bc6285304a5c/history/ HTTP/1.1" 200 819
+INFO 2025-08-31 18:04:10,312 basehttp 57561 6223818752 "GET /api/chat/conversations/38d6aa56-72a4-4ce7-b379-bc6285304a5c/history/ HTTP/1.1" 200 819
+INFO 2025-08-31 18:04:16,537 basehttp 57561 6190166016 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:04:16,542 basehttp 57561 6223818752 "GET /api/chat/conversations/ HTTP/1.1" 200 434
+INFO 2025-08-31 18:04:16,545 basehttp 57561 6240645120 "GET /api/chat/conversations/38d6aa56-72a4-4ce7-b379-bc6285304a5c/history/ HTTP/1.1" 200 819
+INFO 2025-08-31 18:04:16,548 basehttp 57561 6190166016 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:04:16,554 basehttp 57561 6156513280 "GET /api/chat/conversations/ HTTP/1.1" 200 434
+INFO 2025-08-31 18:04:22,093 basehttp 57561 6190166016 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:04:22,101 basehttp 57561 6156513280 "GET /api/chat/conversations/ HTTP/1.1" 200 434
+INFO 2025-08-31 18:04:22,106 basehttp 57561 6240645120 "GET /api/chat/conversations/38d6aa56-72a4-4ce7-b379-bc6285304a5c/history/ HTTP/1.1" 200 819
+INFO 2025-08-31 18:04:22,108 basehttp 57561 6223818752 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:04:22,114 basehttp 57561 6190166016 "GET /api/chat/conversations/ HTTP/1.1" 200 434
+INFO 2025-08-31 18:08:08,569 autoreload 57561 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 18:08:09,015 autoreload 73843 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 18:11:35,087 autoreload 73843 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 18:11:35,521 autoreload 75037 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 18:11:41,921 autoreload 75037 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 18:11:42,261 autoreload 75093 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 18:12:03,907 autoreload 75093 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 18:12:04,249 autoreload 75279 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 18:12:20,802 autoreload 75279 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 18:12:21,242 autoreload 75403 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 18:17:39,082 autoreload 75403 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 18:17:39,472 autoreload 77521 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 18:17:47,837 autoreload 77521 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 18:17:48,142 autoreload 77577 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 18:19:06,904 basehttp 77577 6199160832 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:19:06,905 basehttp 77577 6215987200 "OPTIONS /api/chat/folders/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:19:06,910 basehttp 77577 6232813568 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:19:06,910 basehttp 77577 6249639936 "OPTIONS /api/chat/folders/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:19:06,911 basehttp 77577 6266466304 "OPTIONS /api/chat/conversations/38d6aa56-72a4-4ce7-b379-bc6285304a5c/history/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:19:06,945 basehttp 77577 6199160832 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:19:06,946 basehttp 77577 6249639936 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:19:06,951 basehttp 77577 6215987200 "GET /api/chat/conversations/ HTTP/1.1" 200 434
+INFO 2025-08-31 18:19:06,953 basehttp 77577 6232813568 "GET /api/chat/conversations/ HTTP/1.1" 200 434
+INFO 2025-08-31 18:19:06,953 basehttp 77577 6266466304 "GET /api/chat/conversations/38d6aa56-72a4-4ce7-b379-bc6285304a5c/history/ HTTP/1.1" 200 819
+INFO 2025-08-31 18:19:11,937 basehttp 77577 6232813568 "OPTIONS /api/chat/conversations/38d6aa56-72a4-4ce7-b379-bc6285304a5c/delete/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:19:11,960 basehttp 77577 6232813568 "DELETE /api/chat/conversations/38d6aa56-72a4-4ce7-b379-bc6285304a5c/delete/ HTTP/1.1" 200 47
+INFO 2025-08-31 18:19:11,979 basehttp 77577 6232813568 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:19:12,239 basehttp 77577 6232813568 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:19:12,242 basehttp 77577 6266466304 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:19:12,252 basehttp 77577 6215987200 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:19:12,253 basehttp 77577 6232813568 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:19:15,808 basehttp 77577 6232813568 "POST /api/chat/conversations/ HTTP/1.1" 201 310
+INFO 2025-08-31 18:19:15,816 basehttp 77577 6215987200 "OPTIONS /api/chat/conversations/779d1c20-e8c1-43a9-ab15-b4802aff68b4/history/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:19:15,837 basehttp 77577 6232813568 "GET /api/chat/conversations/ HTTP/1.1" 200 312
+INFO 2025-08-31 18:19:15,841 basehttp 77577 6215987200 "GET /api/chat/conversations/779d1c20-e8c1-43a9-ab15-b4802aff68b4/history/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:19:15,863 views 77577 6215987200 ChatStreamView POST called by user: bro (bro sultan)
+INFO 2025-08-31 18:19:15,863 views 77577 6215987200 Request data: {'message': 'hi bro', 'conversation_id': '779d1c20-e8c1-43a9-ab15-b4802aff68b4'}
+INFO 2025-08-31 18:19:15,866 views 77577 6215987200 Serializer validated data: OrderedDict({'message': 'hi bro', 'conversation_id': UUID('779d1c20-e8c1-43a9-ab15-b4802aff68b4')})
+INFO 2025-08-31 18:19:15,867 views 77577 6215987200 Starting generate_stream function
+INFO 2025-08-31 18:19:15,867 views 77577 6215987200 About to call process_chat_message_stream
+INFO 2025-08-31 18:19:20,056 services 77577 6215987200 Finished processing 1 lines
+INFO 2025-08-31 18:19:20,058 views 77577 6215987200 Stream completed with 0 chunks
+INFO 2025-08-31 18:19:20,059 basehttp 77577 6215987200 "POST /api/chat/stream/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:19:22,508 basehttp 77577 6232813568 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:19:22,515 basehttp 77577 6266466304 "GET /api/chat/conversations/779d1c20-e8c1-43a9-ab15-b4802aff68b4/history/ HTTP/1.1" 200 821
+INFO 2025-08-31 18:19:22,515 basehttp 77577 6215987200 "GET /api/chat/conversations/ HTTP/1.1" 200 436
+INFO 2025-08-31 18:19:22,522 basehttp 77577 6249639936 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:19:22,527 basehttp 77577 6215987200 "GET /api/chat/conversations/ HTTP/1.1" 200 436
+INFO 2025-08-31 18:19:38,548 views 77577 6215987200 ChatStreamView POST called by user: bro (bro sultan)
+INFO 2025-08-31 18:19:38,549 views 77577 6215987200 Request data: {'message': 'hi bro', 'conversation_id': '779d1c20-e8c1-43a9-ab15-b4802aff68b4'}
+INFO 2025-08-31 18:19:38,551 views 77577 6215987200 Serializer validated data: OrderedDict({'message': 'hi bro', 'conversation_id': UUID('779d1c20-e8c1-43a9-ab15-b4802aff68b4')})
+INFO 2025-08-31 18:19:38,551 views 77577 6215987200 Starting generate_stream function
+INFO 2025-08-31 18:19:38,551 views 77577 6215987200 About to call process_chat_message_stream
+INFO 2025-08-31 18:19:44,503 services 77577 6215987200 Finished processing 1 lines
+INFO 2025-08-31 18:19:44,505 views 77577 6215987200 Stream completed with 0 chunks
+INFO 2025-08-31 18:19:44,505 basehttp 77577 6215987200 "POST /api/chat/stream/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:21:51,535 autoreload 77577 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 18:21:52,025 autoreload 79699 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 18:22:15,600 autoreload 79699 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 18:22:15,951 autoreload 79798 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 18:22:37,823 autoreload 79918 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 18:22:43,386 basehttp 79918 6179434496 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:43,398 basehttp 79918 6162608128 "GET /api/chat/conversations/ HTTP/1.1" 200 436
+INFO 2025-08-31 18:22:43,406 basehttp 79918 6196260864 "GET /api/chat/conversations/779d1c20-e8c1-43a9-ab15-b4802aff68b4/history/ HTTP/1.1" 200 1641
+INFO 2025-08-31 18:22:43,408 basehttp 79918 6179434496 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:43,416 basehttp 79918 6213087232 "GET /api/chat/conversations/ HTTP/1.1" 200 436
+INFO 2025-08-31 18:22:44,785 basehttp 79918 6179434496 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:44,789 basehttp 79918 6213087232 "GET /api/chat/conversations/ HTTP/1.1" 200 436
+INFO 2025-08-31 18:22:44,794 basehttp 79918 6196260864 "GET /api/chat/conversations/779d1c20-e8c1-43a9-ab15-b4802aff68b4/history/ HTTP/1.1" 200 1641
+INFO 2025-08-31 18:22:44,797 basehttp 79918 6162608128 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:44,804 basehttp 79918 6179434496 "GET /api/chat/conversations/ HTTP/1.1" 200 436
+INFO 2025-08-31 18:22:48,105 basehttp 79918 6179434496 "OPTIONS /api/chat/conversations/779d1c20-e8c1-43a9-ab15-b4802aff68b4/delete/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:22:48,129 basehttp 79918 6179434496 "DELETE /api/chat/conversations/779d1c20-e8c1-43a9-ab15-b4802aff68b4/delete/ HTTP/1.1" 200 47
+INFO 2025-08-31 18:22:48,150 basehttp 79918 6179434496 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:48,300 basehttp 79918 6179434496 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:48,302 basehttp 79918 6162608128 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:48,313 basehttp 79918 6196260864 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:48,313 basehttp 79918 6179434496 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:49,981 basehttp 79918 6196260864 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:49,983 basehttp 79918 6179434496 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:49,993 basehttp 79918 6162608128 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:49,993 basehttp 79918 6196260864 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:54,118 basehttp 79918 6196260864 "POST /api/chat/conversations/ HTTP/1.1" 201 310
+INFO 2025-08-31 18:22:54,126 basehttp 79918 6162608128 "OPTIONS /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:22:54,136 basehttp 79918 6196260864 "GET /api/chat/conversations/ HTTP/1.1" 200 312
+INFO 2025-08-31 18:22:54,141 basehttp 79918 6162608128 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:22:54,156 views 79918 6162608128 ChatStreamView POST called by user: bro (bro sultan)
+INFO 2025-08-31 18:22:54,156 views 79918 6162608128 Request data: {'message': 'hi bro', 'conversation_id': 'a07198f9-2c68-48b4-9ee1-718f25991a78'}
+INFO 2025-08-31 18:22:54,158 views 79918 6162608128 Serializer validated data: OrderedDict({'message': 'hi bro', 'conversation_id': UUID('a07198f9-2c68-48b4-9ee1-718f25991a78')})
+INFO 2025-08-31 18:22:54,158 views 79918 6162608128 Starting generate_stream function
+INFO 2025-08-31 18:22:54,159 views 79918 6162608128 About to call process_chat_message_stream
+INFO 2025-08-31 18:23:00,113 views 79918 6162608128 Stream completed with 9 chunks
+INFO 2025-08-31 18:23:00,113 basehttp 79918 6162608128 "POST /api/chat/stream/ HTTP/1.1" 200 3053
+INFO 2025-08-31 18:25:04,467 basehttp 79918 6196260864 "GET /api/auth/profile/ HTTP/1.1" 200 523
+INFO 2025-08-31 18:25:04,467 basehttp 79918 6179434496 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 18:25:04,483 basehttp 79918 6213087232 "GET /api/auth/client-info/ HTTP/1.1" 200 354
+INFO 2025-08-31 18:25:04,483 basehttp 79918 6162608128 "GET /api/auth/profile/ HTTP/1.1" 200 523
+INFO 2025-08-31 18:30:02,205 basehttp 79918 6213087232 "OPTIONS /api/files/?page=1 HTTP/1.1" 200 0
+INFO 2025-08-31 18:30:02,205 basehttp 79918 6162608128 "OPTIONS /api/files/?page=1 HTTP/1.1" 200 0
+INFO 2025-08-31 18:30:02,296 basehttp 79918 6213087232 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:30:02,315 basehttp 79918 6162608128 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:30:02,357 basehttp 79918 6162608128 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:30:24,729 basehttp 79918 6162608128 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:30:44,932 basehttp 79918 6162608128 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:31:13,212 basehttp 79918 6162608128 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:39:42,876 basehttp 79918 6196260864 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:39:42,881 basehttp 79918 6162608128 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:39:42,884 basehttp 79918 6179434496 "GET /api/chat/conversations/ HTTP/1.1" 200 470
+INFO 2025-08-31 18:39:42,890 basehttp 79918 6196260864 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:39:42,915 basehttp 79918 6213087232 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:39:42,920 basehttp 79918 6162608128 "GET /api/chat/conversations/ HTTP/1.1" 200 470
+INFO 2025-08-31 18:52:26,311 basehttp 79918 6162608128 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 906
+INFO 2025-08-31 18:54:09,111 basehttp 79918 6196260864 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:09,115 basehttp 79918 6213087232 "GET /api/chat/conversations/ HTTP/1.1" 200 470
+INFO 2025-08-31 18:54:09,118 basehttp 79918 6162608128 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:09,122 basehttp 79918 6179434496 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 906
+INFO 2025-08-31 18:54:09,128 basehttp 79918 6196260864 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:09,134 basehttp 79918 6229913600 "GET /api/chat/conversations/ HTTP/1.1" 200 470
+INFO 2025-08-31 18:54:09,137 basehttp 79918 6213087232 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:22,468 basehttp 79918 6213087232 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 906
+INFO 2025-08-31 18:54:22,470 basehttp 79918 6213087232 - Broken pipe from ('127.0.0.1', 58794)
+INFO 2025-08-31 18:54:22,591 basehttp 79918 6196260864 "GET /api/chat/conversations/ HTTP/1.1" 200 470
+INFO 2025-08-31 18:54:22,594 basehttp 79918 6179434496 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:22,595 basehttp 79918 6229913600 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:22,605 basehttp 79918 6196260864 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:22,607 basehttp 79918 6162608128 "GET /api/chat/conversations/ HTTP/1.1" 200 470
+INFO 2025-08-31 18:54:22,609 basehttp 79918 6179434496 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:42,076 basehttp 79918 6196260864 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:42,081 basehttp 79918 6179434496 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:42,083 basehttp 79918 6162608128 "GET /api/chat/conversations/ HTTP/1.1" 200 470
+INFO 2025-08-31 18:54:42,093 basehttp 79918 6229913600 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:42,100 basehttp 79918 6179434496 "GET /api/chat/conversations/ HTTP/1.1" 200 470
+INFO 2025-08-31 18:54:42,102 basehttp 79918 6196260864 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 18:54:55,745 basehttp 79918 6196260864 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 906
+INFO 2025-08-31 18:55:29,373 views 79918 6162034688 ChatStreamView POST called by user: bro (bro sultan)
+INFO 2025-08-31 18:55:29,374 views 79918 6162034688 Request data: {'message': 'give 5 habits', 'conversation_id': 'a07198f9-2c68-48b4-9ee1-718f25991a78'}
+INFO 2025-08-31 18:55:29,376 views 79918 6162034688 Serializer validated data: OrderedDict({'message': 'give 5 habits', 'conversation_id': UUID('a07198f9-2c68-48b4-9ee1-718f25991a78')})
+INFO 2025-08-31 18:55:29,376 views 79918 6162034688 Starting generate_stream function
+INFO 2025-08-31 18:55:29,377 views 79918 6162034688 About to call process_chat_message_stream
+INFO 2025-08-31 18:55:42,467 views 79918 6162034688 Stream completed with 21 chunks
+INFO 2025-08-31 18:55:42,468 basehttp 79918 6162034688 "POST /api/chat/stream/ HTTP/1.1" 200 7022
+INFO 2025-08-31 18:55:55,792 basehttp 79918 6178861056 "OPTIONS /api/files/upload/ HTTP/1.1" 200 0
+INFO 2025-08-31 18:55:55,818 services 79918 6178861056 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 18:55:55,828 services 79918 6178861056 Successfully uploaded file: Atomic habits  PDFDrive_52044688.pdf
+INFO 2025-08-31 18:55:55,830 services 79918 6178861056 File uploaded successfully: 18de9568-35cc-4b30-a440-1532b7812a80
+INFO 2025-08-31 18:55:55,838 basehttp 79918 6178861056 "POST /api/files/upload/ HTTP/1.1" 201 820
+INFO 2025-08-31 18:55:55,858 basehttp 79918 6178861056 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 18:57:58,397 basehttp 79918 6195687424 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:57:58,408 basehttp 79918 6162034688 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 18:57:58,414 basehttp 79918 6178861056 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 18:57:58,423 basehttp 79918 6212513792 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 1879
+INFO 2025-08-31 18:57:58,428 basehttp 79918 6195687424 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:57:58,428 basehttp 79918 6229913600 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 18:57:58,444 basehttp 79918 6162034688 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 18:58:44,833 basehttp 79918 6162034688 - Broken pipe from ('127.0.0.1', 61178)
+INFO 2025-08-31 18:58:45,093 basehttp 79918 6212513792 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:58:45,099 basehttp 79918 6195687424 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 18:58:45,109 basehttp 79918 6229913600 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 18:58:45,111 basehttp 79918 6178861056 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 18:58:45,119 basehttp 79918 6212513792 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 18:58:45,128 basehttp 79918 6195687424 "GET /api/files/?page=1 HTTP/1.1" 200 774
+WARNING 2025-08-31 19:01:57,808 log 79918 6195687424 Unauthorized: /api/files/
+WARNING 2025-08-31 19:01:57,808 log 79918 6178861056 Unauthorized: /api/chat/folders/
+WARNING 2025-08-31 19:01:57,809 log 79918 6212513792 Unauthorized: /api/chat/conversations/
+WARNING 2025-08-31 19:01:57,810 basehttp 79918 6195687424 "GET /api/files/?page=1 HTTP/1.1" 401 172
+WARNING 2025-08-31 19:01:57,814 basehttp 79918 6178861056 "GET /api/chat/folders/ HTTP/1.1" 401 172
+WARNING 2025-08-31 19:01:57,818 log 79918 6229913600 Unauthorized: /api/files/
+WARNING 2025-08-31 19:01:57,822 basehttp 79918 6212513792 "GET /api/chat/conversations/ HTTP/1.1" 401 172
+WARNING 2025-08-31 19:01:57,823 basehttp 79918 6229913600 "GET /api/files/?page=1 HTTP/1.1" 401 172
+WARNING 2025-08-31 19:01:57,827 log 79918 6195687424 Unauthorized: /api/chat/folders/
+WARNING 2025-08-31 19:01:57,833 log 79918 6178861056 Unauthorized: /api/chat/conversations/
+WARNING 2025-08-31 19:01:57,834 basehttp 79918 6178861056 "GET /api/chat/conversations/ HTTP/1.1" 401 172
+WARNING 2025-08-31 19:01:57,834 basehttp 79918 6195687424 "GET /api/chat/folders/ HTTP/1.1" 401 172
+INFO 2025-08-31 19:02:19,464 autoreload 79918 8458497152 /Users/bro/PROJECTS/instant-be/apps/files/services.py changed, reloading.
+INFO 2025-08-31 19:02:19,896 autoreload 95739 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 19:02:50,745 basehttp 95739 6128922624 "POST /api/auth/login/ HTTP/1.1" 200 1069
+INFO 2025-08-31 19:02:51,116 basehttp 95739 6162575360 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:02:51,120 basehttp 95739 6145748992 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:02:51,137 basehttp 95739 6128922624 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:02:51,157 basehttp 95739 6162575360 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:02:51,179 basehttp 95739 6179401728 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:02:51,183 basehttp 95739 6128922624 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:02:54,518 basehttp 95739 6162575360 "OPTIONS /api/files/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:02:54,519 basehttp 95739 6179401728 "OPTIONS /api/files/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:02:54,534 basehttp 95739 6128922624 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:02:54,537 basehttp 95739 6179401728 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:02:54,551 basehttp 95739 6162575360 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:02:54,559 basehttp 95739 6128922624 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:01,293 basehttp 95739 6128922624 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 1879
+INFO 2025-08-31 19:03:06,367 basehttp 95739 6145748992 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:06,378 basehttp 95739 6179401728 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:06,391 basehttp 95739 6196228096 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 1879
+INFO 2025-08-31 19:03:06,392 basehttp 95739 6162575360 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:06,392 basehttp 95739 6145748992 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:06,396 basehttp 95739 6128922624 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:06,404 basehttp 95739 6213627904 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:06,425 basehttp 95739 6179401728 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:06,429 basehttp 95739 6145748992 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:09,444 basehttp 95739 6128922624 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:09,444 basehttp 95739 6213627904 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:09,451 basehttp 95739 6145748992 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:09,453 basehttp 95739 6179401728 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:09,458 basehttp 95739 6162575360 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 1879
+INFO 2025-08-31 19:03:09,460 basehttp 95739 6196228096 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:09,469 basehttp 95739 6213627904 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:09,471 basehttp 95739 6128922624 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:09,474 basehttp 95739 6145748992 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:10,346 basehttp 95739 6196228096 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:10,354 basehttp 95739 6213627904 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:10,361 basehttp 95739 6145748992 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:10,363 basehttp 95739 6128922624 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:10,363 basehttp 95739 6162575360 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 1879
+INFO 2025-08-31 19:03:10,367 basehttp 95739 6196228096 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:10,369 basehttp 95739 6179401728 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:10,382 basehttp 95739 6213627904 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:10,383 basehttp 95739 6145748992 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:12,283 basehttp 95739 6145748992 - Broken pipe from ('127.0.0.1', 62868)
+INFO 2025-08-31 19:03:12,406 basehttp 95739 6196228096 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:12,415 basehttp 95739 6213627904 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:12,416 basehttp 95739 6179401728 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:12,420 basehttp 95739 6162575360 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:12,429 basehttp 95739 6128922624 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:12,441 basehttp 95739 6196228096 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:12,443 basehttp 95739 6179401728 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:12,443 basehttp 95739 6213627904 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:17,487 basehttp 95739 6128922624 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:17,492 basehttp 95739 6179401728 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:17,498 basehttp 95739 6196228096 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:17,498 basehttp 95739 6213627904 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:17,502 basehttp 95739 6162575360 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:17,512 basehttp 95739 6128922624 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:17,519 basehttp 95739 6179401728 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:17,524 basehttp 95739 6213627904 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:18,171 basehttp 95739 6162575360 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:18,176 basehttp 95739 6213627904 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:18,177 basehttp 95739 6128922624 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:18,181 basehttp 95739 6179401728 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:18,189 basehttp 95739 6196228096 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:03:18,189 basehttp 95739 6162575360 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:03:18,199 basehttp 95739 6230454272 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:18,202 basehttp 95739 6128922624 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:33,905 basehttp 95739 6128922624 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:03:33,957 basehttp 95739 6128922624 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:04:05,357 basehttp 95739 6128922624 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:04:24,566 basehttp 95739 6128922624 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:04:24,648 basehttp 95739 6128922624 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:04:25,188 basehttp 95739 6128922624 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 1879
+INFO 2025-08-31 19:04:47,269 basehttp 95739 6162575360 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:04:47,277 basehttp 95739 6196228096 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:04:47,286 basehttp 95739 6179401728 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 1879
+INFO 2025-08-31 19:04:47,291 basehttp 95739 6128922624 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:04:47,291 basehttp 95739 6213627904 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:04:47,296 basehttp 95739 6230454272 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:04:47,341 basehttp 95739 6162575360 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:04:47,359 basehttp 95739 6196228096 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:04:47,364 basehttp 95739 6128922624 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:04:48,671 basehttp 95739 6230454272 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:04:48,677 basehttp 95739 6162575360 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:04:48,678 basehttp 95739 6128922624 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:04:48,683 basehttp 95739 6196228096 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:04:48,684 basehttp 95739 6213627904 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 1879
+INFO 2025-08-31 19:04:48,688 basehttp 95739 6179401728 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:04:48,698 basehttp 95739 6230454272 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:04:48,704 basehttp 95739 6162575360 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:04:48,710 basehttp 95739 6128922624 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:05:06,977 services 95739 6128922624 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:05:06,983 services 95739 6128922624 Successfully uploaded file: Atomic habits  PDFDrive_b6ec9e62.pdf
+INFO 2025-08-31 19:05:07,664 services 95739 6128922624 Webhook notification sent successfully for file: bf4ea2b4-c97b-45b1-aec7-4211bca729dd
+INFO 2025-08-31 19:05:07,664 services 95739 6128922624 File uploaded successfully: bf4ea2b4-c97b-45b1-aec7-4211bca729dd
+INFO 2025-08-31 19:05:07,675 basehttp 95739 6128922624 "POST /api/files/upload/ HTTP/1.1" 201 820
+INFO 2025-08-31 19:05:07,706 views 95739 6128922624 ChatStreamView POST called by user: bro (bro sultan)
+INFO 2025-08-31 19:05:07,707 views 95739 6128922624 Request data: {'message': 'give me best 5 habits', 'conversation_id': 'a07198f9-2c68-48b4-9ee1-718f25991a78'}
+INFO 2025-08-31 19:05:07,712 views 95739 6128922624 Serializer validated data: OrderedDict({'message': 'give me best 5 habits', 'conversation_id': UUID('a07198f9-2c68-48b4-9ee1-718f25991a78')})
+INFO 2025-08-31 19:05:07,713 views 95739 6128922624 Starting generate_stream function
+INFO 2025-08-31 19:05:07,713 views 95739 6128922624 About to call process_chat_message_stream
+INFO 2025-08-31 19:05:07,723 basehttp 95739 6162575360 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:05:32,838 views 95739 6128922624 Stream completed with 45 chunks
+INFO 2025-08-31 19:05:32,838 basehttp 95739 6128922624 "POST /api/chat/stream/ HTTP/1.1" 200 14924
+INFO 2025-08-31 19:08:02,801 basehttp 95739 6162575360 "GET /api/files/ HTTP/1.1" 200 1547
+INFO 2025-08-31 19:08:27,828 basehttp 95739 6162575360 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:08:27,854 basehttp 95739 6230454272 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 2990
+INFO 2025-08-31 19:08:27,885 basehttp 95739 6179401728 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:53,968 basehttp 95739 6179401728 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:53,985 basehttp 95739 6230454272 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:55,469 basehttp 95739 6230454272 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:55,486 basehttp 95739 6179401728 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:55,995 basehttp 95739 6179401728 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:56,015 basehttp 95739 6230454272 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:56,198 basehttp 95739 6230454272 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:56,216 basehttp 95739 6179401728 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:56,396 basehttp 95739 6179401728 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:56,416 basehttp 95739 6230454272 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:59,222 basehttp 95739 6162575360 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:09:59,228 basehttp 95739 6179401728 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:09:59,233 basehttp 95739 6230454272 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:09:59,240 basehttp 95739 6162575360 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:09:59,244 basehttp 95739 6129496064 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:09:59,253 basehttp 95739 6179401728 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:10:02,017 basehttp 95739 6129496064 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:10:02,026 basehttp 95739 6162575360 "OPTIONS /api/chat/folders/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:10:02,027 basehttp 95739 6230454272 "OPTIONS /api/files/?page=1 HTTP/1.1" 200 0
+INFO 2025-08-31 19:10:02,031 basehttp 95739 6196228096 "OPTIONS /api/chat/conversations/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:10:02,031 basehttp 95739 6179401728 "OPTIONS /api/files/?page=1 HTTP/1.1" 200 0
+INFO 2025-08-31 19:10:02,033 basehttp 95739 6213054464 "OPTIONS /api/chat/folders/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:10:02,045 basehttp 95739 6230454272 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:10:02,051 basehttp 95739 6213054464 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:10:02,051 basehttp 95739 6129496064 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:10:02,058 basehttp 95739 6196228096 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:10:02,061 basehttp 95739 6162575360 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:10:02,063 basehttp 95739 6179401728 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:10:03,278 basehttp 95739 6179401728 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:10:03,299 basehttp 95739 6162575360 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:10:08,229 basehttp 95739 6162575360 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:10:08,249 basehttp 95739 6179401728 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:11:33,382 basehttp 95739 6196228096 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:11:33,465 basehttp 95739 6162575360 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:11:33,473 basehttp 95739 6213054464 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:11:33,477 basehttp 95739 6179401728 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:11:33,489 basehttp 95739 6196228096 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:11:33,502 basehttp 95739 6213054464 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:11:34,551 basehttp 95739 6196228096 "OPTIONS /api/files/stats/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:11:34,551 basehttp 95739 6179401728 "OPTIONS /api/files/stats/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:11:34,564 services 95739 6179401728 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:11:34,574 basehttp 95739 6213054464 "GET /api/files/ HTTP/1.1" 200 1547
+INFO 2025-08-31 19:11:34,587 basehttp 95739 6179401728 "GET /api/files/stats/ HTTP/1.1" 200 491
+INFO 2025-08-31 19:11:34,597 basehttp 95739 6196228096 "GET /api/files/ HTTP/1.1" 200 1547
+INFO 2025-08-31 19:11:34,599 services 95739 6213054464 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:11:34,608 basehttp 95739 6213054464 "GET /api/files/stats/ HTTP/1.1" 200 491
+INFO 2025-08-31 19:11:44,121 basehttp 95739 6213054464 "OPTIONS /api/files/18de9568-35cc-4b30-a440-1532b7812a80/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:11:44,135 services 95739 6213054464 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:11:44,138 basehttp 95739 6213054464 "DELETE /api/files/18de9568-35cc-4b30-a440-1532b7812a80/ HTTP/1.1" 204 0
+INFO 2025-08-31 19:11:44,157 basehttp 95739 6213054464 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:11:44,164 services 95739 6213054464 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:11:44,172 basehttp 95739 6213054464 "GET /api/files/stats/ HTTP/1.1" 200 354
+INFO 2025-08-31 19:11:54,452 basehttp 95739 6213054464 "OPTIONS /api/files/bf4ea2b4-c97b-45b1-aec7-4211bca729dd/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:11:54,463 services 95739 6213054464 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:11:54,464 basehttp 95739 6213054464 "DELETE /api/files/bf4ea2b4-c97b-45b1-aec7-4211bca729dd/ HTTP/1.1" 204 0
+INFO 2025-08-31 19:11:54,478 basehttp 95739 6213054464 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:11:54,486 services 95739 6213054464 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:11:54,493 basehttp 95739 6213054464 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:11:55,925 autoreload 95739 8458497152 /Users/bro/PROJECTS/instant-be/apps/files/services.py changed, reloading.
+INFO 2025-08-31 19:11:56,293 autoreload 4211 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 19:11:57,968 services 4211 6177812480 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:11:57,968 basehttp 4211 6160986112 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:11:57,968 basehttp 4211 6211465216 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:11:57,978 basehttp 4211 6194638848 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:11:57,984 basehttp 4211 6160986112 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:11:57,989 basehttp 4211 6228291584 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:11:57,992 basehttp 4211 6177812480 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:11:57,995 basehttp 4211 6211465216 "GET /api/chat/conversations/ HTTP/1.1" 200 539
+INFO 2025-08-31 19:11:58,001 services 4211 6228291584 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:11:58,008 basehttp 4211 6228291584 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:11:58,850 basehttp 4211 6228291584 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 19:11:58,858 basehttp 4211 6211465216 "GET /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/history/ HTTP/1.1" 200 2990
+INFO 2025-08-31 19:11:58,867 basehttp 4211 6177812480 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 19:12:01,909 basehttp 4211 6177812480 "OPTIONS /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/delete/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:12:01,924 basehttp 4211 6177812480 "DELETE /api/chat/conversations/a07198f9-2c68-48b4-9ee1-718f25991a78/delete/ HTTP/1.1" 200 47
+INFO 2025-08-31 19:12:01,946 basehttp 4211 6177812480 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:12:02,113 basehttp 4211 6211465216 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:12:02,120 basehttp 4211 6177812480 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 19:12:02,124 basehttp 4211 6228291584 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:12:02,132 basehttp 4211 6160986112 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:12:02,134 basehttp 4211 6177812480 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:12:02,136 basehttp 4211 6211465216 "GET /api/files/?page=1 HTTP/1.1" 200 2
+INFO 2025-08-31 19:13:12,929 services 4211 6177812480 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:13:12,937 basehttp 4211 6211465216 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:13:12,945 basehttp 4211 6177812480 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:13:12,953 basehttp 4211 6160986112 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:13:12,956 services 4211 6211465216 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:13:12,963 basehttp 4211 6211465216 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:13:18,368 services 4211 6211465216 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:13:18,377 services 4211 6211465216 Successfully uploaded file: Atomic habits  PDFDrive_17e38334.pdf
+INFO 2025-08-31 19:13:33,902 services 4211 6211465216 Webhook file upload sent successfully for file: 17cdec4e-a1c9-4359-93e9-84bff03ee306
+INFO 2025-08-31 19:13:33,903 services 4211 6211465216 File uploaded successfully: 17cdec4e-a1c9-4359-93e9-84bff03ee306
+INFO 2025-08-31 19:13:33,913 basehttp 4211 6211465216 "POST /api/files/upload/ HTTP/1.1" 201 820
+INFO 2025-08-31 19:13:33,914 basehttp 4211 6211465216 - Broken pipe from ('127.0.0.1', 49666)
+INFO 2025-08-31 19:14:24,150 basehttp 4211 6228291584 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:24,150 services 4211 6177812480 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:14:24,152 basehttp 4211 6194638848 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:24,163 basehttp 4211 6160986112 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:14:24,168 basehttp 4211 6228291584 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:24,169 basehttp 4211 6211465216 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:24,175 basehttp 4211 6177812480 "GET /api/files/stats/ HTTP/1.1" 200 354
+INFO 2025-08-31 19:14:24,182 services 4211 6211465216 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:14:24,183 basehttp 4211 6194638848 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:14:24,191 basehttp 4211 6211465216 "GET /api/files/stats/ HTTP/1.1" 200 354
+INFO 2025-08-31 19:14:25,341 services 4211 6194638848 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:14:25,342 basehttp 4211 6228291584 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:25,349 basehttp 4211 6177812480 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:25,356 basehttp 4211 6211465216 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:14:25,358 basehttp 4211 6160986112 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:25,362 basehttp 4211 6228291584 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:25,362 basehttp 4211 6194638848 "GET /api/files/stats/ HTTP/1.1" 200 354
+INFO 2025-08-31 19:14:25,372 services 4211 6160986112 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:14:25,376 basehttp 4211 6177812480 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:14:25,381 basehttp 4211 6160986112 "GET /api/files/stats/ HTTP/1.1" 200 354
+INFO 2025-08-31 19:14:27,227 basehttp 4211 6160986112 "OPTIONS /api/files/17cdec4e-a1c9-4359-93e9-84bff03ee306/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:14:27,244 services 4211 6160986112 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:14:27,247 basehttp 4211 6160986112 "DELETE /api/files/17cdec4e-a1c9-4359-93e9-84bff03ee306/ HTTP/1.1" 204 0
+INFO 2025-08-31 19:14:27,271 basehttp 4211 6160986112 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:27,279 services 4211 6160986112 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:14:27,293 basehttp 4211 6160986112 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:14:29,072 services 4211 6177812480 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:14:29,073 basehttp 4211 6228291584 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:29,074 basehttp 4211 6194638848 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:29,081 basehttp 4211 6160986112 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:29,094 basehttp 4211 6211465216 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:29,101 basehttp 4211 6177812480 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:14:29,110 basehttp 4211 6228291584 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:29,110 basehttp 4211 6194638848 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:14:29,121 services 4211 6211465216 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:14:29,133 basehttp 4211 6211465216 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:14:33,980 services 4211 6211465216 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:14:33,986 services 4211 6211465216 Successfully uploaded file: Atomic habits  PDFDrive_aff66398.pdf
+INFO 2025-08-31 19:14:48,742 services 4211 6211465216 Webhook file upload sent successfully for file: 644b040b-8993-4fbf-a431-a017ae51a122
+INFO 2025-08-31 19:14:48,742 services 4211 6211465216 File uploaded successfully: 644b040b-8993-4fbf-a431-a017ae51a122
+INFO 2025-08-31 19:14:48,756 basehttp 4211 6211465216 "POST /api/files/upload/ HTTP/1.1" 201 820
+INFO 2025-08-31 19:14:48,758 basehttp 4211 6211465216 - Broken pipe from ('127.0.0.1', 50548)
+INFO 2025-08-31 19:16:02,739 autoreload 4211 8458497152 /Users/bro/PROJECTS/instant-be/apps/files/services.py changed, reloading.
+INFO 2025-08-31 19:16:03,152 autoreload 6322 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 19:16:21,403 services 6322 6215610368 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:21,410 basehttp 6322 6232436736 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:21,411 basehttp 6322 6249263104 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:21,436 basehttp 6322 6266662912 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:21,439 basehttp 6322 6232436736 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:21,439 basehttp 6322 6198784000 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:16:21,453 basehttp 6322 6215610368 "GET /api/files/stats/ HTTP/1.1" 200 354
+INFO 2025-08-31 19:16:21,533 basehttp 6322 6266662912 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:16:21,533 services 6322 6232436736 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:21,553 basehttp 6322 6232436736 "GET /api/files/stats/ HTTP/1.1" 200 354
+INFO 2025-08-31 19:16:23,647 basehttp 6322 6232436736 "OPTIONS /api/files/644b040b-8993-4fbf-a431-a017ae51a122/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:16:23,668 services 6322 6232436736 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:23,671 basehttp 6322 6232436736 "DELETE /api/files/644b040b-8993-4fbf-a431-a017ae51a122/ HTTP/1.1" 204 0
+INFO 2025-08-31 19:16:23,689 basehttp 6322 6232436736 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:23,697 services 6322 6232436736 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:23,712 basehttp 6322 6232436736 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:16:25,168 services 6322 6266662912 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:25,171 basehttp 6322 6232436736 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:25,174 basehttp 6322 6215610368 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:25,178 basehttp 6322 6198784000 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:25,187 basehttp 6322 6266662912 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:16:25,194 basehttp 6322 6249263104 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:25,197 basehttp 6322 6215610368 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:25,197 basehttp 6322 6232436736 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:25,200 services 6322 6198784000 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:25,209 basehttp 6322 6198784000 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:16:35,830 services 6322 6215610368 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:35,831 basehttp 6322 6249263104 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:35,833 basehttp 6322 6232436736 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:35,835 basehttp 6322 6198784000 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:35,846 basehttp 6322 6232436736 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:35,846 basehttp 6322 6266662912 "GET /api/chat/conversations/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:35,851 basehttp 6322 6249263104 "GET /api/files/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:16:35,851 basehttp 6322 6215610368 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:16:35,861 services 6322 6266662912 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:35,868 basehttp 6322 6266662912 "GET /api/files/stats/ HTTP/1.1" 200 174
+INFO 2025-08-31 19:16:39,775 services 6322 6266662912 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:39,784 services 6322 6266662912 Successfully uploaded file: Atomic habits  PDFDrive_e6f78e25.pdf
+INFO 2025-08-31 19:16:40,457 services 6322 6266662912 Webhook notification sent successfully for file: 32e3d354-dcb3-4c22-a357-4396acaa7710
+INFO 2025-08-31 19:16:40,457 services 6322 6266662912 File uploaded successfully: 32e3d354-dcb3-4c22-a357-4396acaa7710
+INFO 2025-08-31 19:16:40,468 basehttp 6322 6266662912 "POST /api/files/upload/ HTTP/1.1" 201 820
+INFO 2025-08-31 19:16:40,496 basehttp 6322 6266662912 "GET /api/files/ HTTP/1.1" 200 774
+INFO 2025-08-31 19:16:40,507 services 6322 6266662912 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:40,518 basehttp 6322 6266662912 "GET /api/files/stats/ HTTP/1.1" 200 354
+INFO 2025-08-31 19:16:45,374 basehttp 6322 6266662912 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:16:45,391 basehttp 6322 6249263104 "GET /api/files/?page=1 HTTP/1.1" 200 774
+INFO 2025-08-31 19:16:58,607 services 6322 6249263104 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:58,613 services 6322 6249263104 Successfully uploaded file: Atomic habits  PDFDrive_8ca6bf4b.pdf
+INFO 2025-08-31 19:16:59,289 services 6322 6249263104 Webhook notification sent successfully for file: b9d69fcf-d091-40cd-bc46-7d29b7b41fcd
+INFO 2025-08-31 19:16:59,290 services 6322 6249263104 File uploaded successfully: b9d69fcf-d091-40cd-bc46-7d29b7b41fcd
+INFO 2025-08-31 19:16:59,302 basehttp 6322 6249263104 "POST /api/files/upload/ HTTP/1.1" 201 820
+INFO 2025-08-31 19:16:59,337 services 6322 6266662912 Storage directory ready: /Users/bro/PROJECTS/instant-be/media/uploads
+INFO 2025-08-31 19:16:59,338 basehttp 6322 6249263104 "GET /api/files/?page=1 HTTP/1.1" 200 1547
+INFO 2025-08-31 19:16:59,342 services 6322 6266662912 Successfully uploaded file: Atomic habits  PDFDrive_5f4f7b70.pdf
+INFO 2025-08-31 19:17:00,009 services 6322 6266662912 Webhook notification sent successfully for file: 459c9556-5164-4632-a978-8a6b90b6fc09
+INFO 2025-08-31 19:17:00,009 services 6322 6266662912 File uploaded successfully: 459c9556-5164-4632-a978-8a6b90b6fc09
+INFO 2025-08-31 19:17:00,021 basehttp 6322 6266662912 "POST /api/files/upload/ HTTP/1.1" 201 820
+INFO 2025-08-31 19:17:00,054 basehttp 6322 6249263104 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:17:00,058 basehttp 6322 6266662912 "POST /api/chat/conversations/ HTTP/1.1" 201 320
+INFO 2025-08-31 19:17:00,064 basehttp 6322 6249263104 "OPTIONS /api/chat/conversations/0274b94e-b802-4aa2-aa2e-42be8d15e706/history/ HTTP/1.1" 200 0
+INFO 2025-08-31 19:17:00,079 basehttp 6322 6266662912 "GET /api/chat/conversations/ HTTP/1.1" 200 322
+INFO 2025-08-31 19:17:00,082 basehttp 6322 6249263104 "GET /api/chat/conversations/0274b94e-b802-4aa2-aa2e-42be8d15e706/history/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:17:00,095 views 6322 6249263104 ChatStreamView POST called by user: bro (bro sultan)
+INFO 2025-08-31 19:17:00,095 views 6322 6249263104 Request data: {'message': 'give me 5 habits', 'conversation_id': '0274b94e-b802-4aa2-aa2e-42be8d15e706'}
+INFO 2025-08-31 19:17:00,098 views 6322 6249263104 Serializer validated data: OrderedDict({'message': 'give me 5 habits', 'conversation_id': UUID('0274b94e-b802-4aa2-aa2e-42be8d15e706')})
+INFO 2025-08-31 19:17:00,098 views 6322 6249263104 Starting generate_stream function
+INFO 2025-08-31 19:17:00,098 views 6322 6249263104 About to call process_chat_message_stream
+INFO 2025-08-31 19:17:05,575 views 6322 6249263104 Stream completed with 85 chunks
+INFO 2025-08-31 19:17:05,575 basehttp 6322 6249263104 "POST /api/chat/stream/ HTTP/1.1" 200 28218
+INFO 2025-08-31 19:20:01,794 views 6322 6198784000 ChatStreamView POST called by user: bro (bro sultan)
+INFO 2025-08-31 19:20:01,796 views 6322 6198784000 Request data: {'message': 'give me 5 habits in my uploaded pdf', 'conversation_id': '0274b94e-b802-4aa2-aa2e-42be8d15e706'}
+INFO 2025-08-31 19:20:01,804 views 6322 6198784000 Serializer validated data: OrderedDict({'message': 'give me 5 habits in my uploaded pdf', 'conversation_id': UUID('0274b94e-b802-4aa2-aa2e-42be8d15e706')})
+INFO 2025-08-31 19:20:01,804 views 6322 6198784000 Starting generate_stream function
+INFO 2025-08-31 19:20:01,804 views 6322 6198784000 About to call process_chat_message_stream
+INFO 2025-08-31 19:20:10,282 views 6322 6198784000 Stream completed with 44 chunks
+INFO 2025-08-31 19:20:10,282 basehttp 6322 6198784000 "POST /api/chat/stream/ HTTP/1.1" 200 14417
+INFO 2025-08-31 19:20:18,334 basehttp 6322 6215610368 "OPTIONS /api/chat/feedback/ HTTP/1.1" 200 0
+ERROR 2025-08-31 19:20:18,910 services 6322 6215610368 RAG API feedbacks request failed: 404 Client Error: Not Found for url: https://n8n.omadligrouphq.com/webhook/8ab1aff6-af35-4fd3-8098-eceedfc97ac0?status=false
+ERROR 2025-08-31 19:20:21,437 services 6322 6215610368 RAG API feedback request failed: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:20:21,437 services 6322 6215610368 Feedback service error: Failed to submit feedback to RAG service: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:20:21,440 log 6322 6215610368 Internal Server Error: /api/chat/feedback/
+ERROR 2025-08-31 19:20:21,441 basehttp 6322 6215610368 "POST /api/chat/feedback/ HTTP/1.1" 500 168
+ERROR 2025-08-31 19:21:18,946 services 6322 6215610368 RAG API feedbacks request failed: 404 Client Error: Not Found for url: https://n8n.omadligrouphq.com/webhook/8ab1aff6-af35-4fd3-8098-eceedfc97ac0?status=false
+ERROR 2025-08-31 19:21:19,967 services 6322 6215610368 RAG API feedback request failed: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:21:19,967 services 6322 6215610368 Feedback service error: Failed to submit feedback to RAG service: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:21:19,968 log 6322 6215610368 Internal Server Error: /api/chat/feedback/
+ERROR 2025-08-31 19:21:19,969 basehttp 6322 6215610368 "POST /api/chat/feedback/ HTTP/1.1" 500 168
+INFO 2025-08-31 19:23:54,716 autoreload 6322 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/views.py changed, reloading.
+INFO 2025-08-31 19:23:55,068 autoreload 9925 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 19:26:49,226 basehttp 9925 6169653248 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:26:49,240 basehttp 9925 6136000512 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:26:49,240 basehttp 9925 6186479616 "GET /api/chat/conversations/0274b94e-b802-4aa2-aa2e-42be8d15e706/history/ HTTP/1.1" 200 2493
+INFO 2025-08-31 19:26:49,243 basehttp 9925 6152826880 "GET /api/chat/conversations/ HTTP/1.1" 200 549
+INFO 2025-08-31 19:26:49,243 basehttp 9925 6205026304 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:26:49,259 basehttp 9925 6169653248 "GET /api/chat/conversations/ HTTP/1.1" 200 549
+INFO 2025-08-31 19:26:49,270 basehttp 9925 6152826880 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:26:55,027 views 9925 6152826880 Webhook feedback sent successfully: 
+ERROR 2025-08-31 19:26:55,575 services 9925 6152826880 RAG API feedbacks request failed: 404 Client Error: Not Found for url: https://n8n.omadligrouphq.com/webhook/8ab1aff6-af35-4fd3-8098-eceedfc97ac0?status=false
+ERROR 2025-08-31 19:26:56,589 services 9925 6152826880 RAG API feedback request failed: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:26:56,589 services 9925 6152826880 Feedback service error: Failed to submit feedback to RAG service: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:26:56,593 log 9925 6152826880 Internal Server Error: /api/chat/feedback/
+ERROR 2025-08-31 19:26:56,594 basehttp 9925 6152826880 "POST /api/chat/feedback/ HTTP/1.1" 500 188
+INFO 2025-08-31 19:28:26,206 autoreload 9925 8458497152 /Users/bro/PROJECTS/instant-be/apps/files/services.py changed, reloading.
+INFO 2025-08-31 19:28:26,575 autoreload 11172 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 19:30:02,027 basehttp 11172 6169997312 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:30:02,039 basehttp 11172 6153170944 "GET /api/chat/conversations/ HTTP/1.1" 200 549
+INFO 2025-08-31 19:30:02,048 basehttp 11172 6186823680 "GET /api/chat/conversations/0274b94e-b802-4aa2-aa2e-42be8d15e706/history/ HTTP/1.1" 200 2493
+INFO 2025-08-31 19:30:02,060 basehttp 11172 6136344576 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:30:02,064 basehttp 11172 6169997312 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:30:02,064 basehttp 11172 6203650048 "GET /api/chat/conversations/ HTTP/1.1" 200 549
+INFO 2025-08-31 19:30:02,094 basehttp 11172 6186823680 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:30:06,383 views 11172 6186823680 Webhook feedback sent successfully: 
+ERROR 2025-08-31 19:30:06,934 services 11172 6186823680 RAG API feedbacks request failed: 404 Client Error: Not Found for url: https://n8n.omadligrouphq.com/webhook/8ab1aff6-af35-4fd3-8098-eceedfc97ac0?status=false
+ERROR 2025-08-31 19:30:07,866 services 11172 6186823680 RAG API feedback request failed: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:30:07,866 services 11172 6186823680 Feedback service error: Failed to submit feedback to RAG service: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:30:07,867 log 11172 6186823680 Internal Server Error: /api/chat/feedback/
+ERROR 2025-08-31 19:30:07,867 basehttp 11172 6186823680 "POST /api/chat/feedback/ HTTP/1.1" 500 188
+INFO 2025-08-31 19:32:15,960 autoreload 11172 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 19:32:16,486 autoreload 12125 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 19:32:25,925 autoreload 12125 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 19:32:26,267 autoreload 12214 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 19:32:38,917 basehttp 12214 6199652352 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:32:38,929 basehttp 12214 6182825984 "GET /api/chat/conversations/ HTTP/1.1" 200 549
+INFO 2025-08-31 19:32:38,937 basehttp 12214 6165999616 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:32:38,937 basehttp 12214 6216478720 "GET /api/chat/conversations/0274b94e-b802-4aa2-aa2e-42be8d15e706/history/ HTTP/1.1" 200 2493
+INFO 2025-08-31 19:32:38,940 basehttp 12214 6199652352 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:32:38,947 basehttp 12214 6234451968 "GET /api/chat/conversations/ HTTP/1.1" 200 549
+INFO 2025-08-31 19:32:38,955 basehttp 12214 6182825984 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:32:47,796 views 12214 6182825984 Webhook feedback sent successfully: 
+ERROR 2025-08-31 19:32:48,366 services 12214 6182825984 RAG API feedbacks request failed: 404 Client Error: Not Found for url: https://n8n.omadligrouphq.com/webhook/8ab1aff6-af35-4fd3-8098-eceedfc97ac0?status=false
+ERROR 2025-08-31 19:32:49,277 services 12214 6182825984 RAG API feedback request failed: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:32:49,277 services 12214 6182825984 Feedback service error: Failed to submit feedback to RAG service: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:32:49,278 log 12214 6182825984 Internal Server Error: /api/chat/feedback/
+ERROR 2025-08-31 19:32:49,279 basehttp 12214 6182825984 "POST /api/chat/feedback/ HTTP/1.1" 500 188
+INFO 2025-08-31 19:35:20,208 views 12214 6182825984 Webhook feedback sent successfully: 
+ERROR 2025-08-31 19:35:20,771 services 12214 6182825984 RAG API feedbacks request failed: 404 Client Error: Not Found for url: https://n8n.omadligrouphq.com/webhook/8ab1aff6-af35-4fd3-8098-eceedfc97ac0?status=false
+ERROR 2025-08-31 19:35:21,712 services 12214 6182825984 RAG API feedback request failed: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:35:21,712 services 12214 6182825984 Feedback service error: Failed to submit feedback to RAG service: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-08-31 19:35:21,718 log 12214 6182825984 Internal Server Error: /api/chat/feedback/
+ERROR 2025-08-31 19:35:21,719 basehttp 12214 6182825984 "POST /api/chat/feedback/ HTTP/1.1" 500 188
+INFO 2025-08-31 19:36:54,292 autoreload 12214 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 19:36:54,687 autoreload 13159 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 19:37:08,230 autoreload 13159 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/services.py changed, reloading.
+INFO 2025-08-31 19:37:08,615 autoreload 13213 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 19:37:31,635 basehttp 13213 6159298560 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:37:31,648 basehttp 13213 6159298560 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:37:31,651 basehttp 13213 6142472192 "GET /api/chat/conversations/ HTTP/1.1" 200 549
+INFO 2025-08-31 19:37:31,654 basehttp 13213 6176124928 "GET /api/chat/conversations/0274b94e-b802-4aa2-aa2e-42be8d15e706/history/ HTTP/1.1" 200 2493
+INFO 2025-08-31 19:37:31,654 basehttp 13213 6125645824 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:37:31,664 basehttp 13213 6193524736 "GET /api/chat/conversations/ HTTP/1.1" 200 549
+INFO 2025-08-31 19:37:31,674 basehttp 13213 6159298560 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:37:37,566 views 13213 6159298560 Webhook feedback sent successfully: 
+ERROR 2025-08-31 19:37:38,114 services 13213 6159298560 RAG API feedbacks request failed: 404 Client Error: Not Found for url: https://n8n.omadligrouphq.com/webhook/8ab1aff6-af35-4fd3-8098-eceedfc97ac0?status=false
+ERROR 2025-08-31 19:37:38,678 services 13213 6159298560 Failed to submit feedback to RAG API: 404
+INFO 2025-08-31 19:37:38,680 basehttp 13213 6159298560 "POST /api/chat/feedback/ HTTP/1.1" 201 162
+INFO 2025-08-31 19:41:10,777 autoreload 13213 8458497152 /Users/bro/PROJECTS/instant-be/apps/chat/views.py changed, reloading.
+INFO 2025-08-31 19:41:11,159 autoreload 14127 8458497152 Watching for file changes with StatReloader
+INFO 2025-08-31 19:43:36,942 views 14127 6124072960 Webhook feedback sent successfully: 
+ERROR 2025-08-31 19:43:37,564 services 14127 6124072960 RAG API feedbacks request failed: 404 Client Error: Not Found for url: https://n8n.omadligrouphq.com/webhook/8ab1aff6-af35-4fd3-8098-eceedfc97ac0?status=false
+ERROR 2025-08-31 19:43:38,226 services 14127 6124072960 Failed to submit feedback to RAG API: 404
+INFO 2025-08-31 19:43:38,230 basehttp 14127 6124072960 "POST /api/chat/feedback/ HTTP/1.1" 201 162
+INFO 2025-08-31 19:45:24,568 basehttp 14127 6157725696 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:45:24,575 basehttp 14127 6140899328 "GET /api/chat/conversations/ HTTP/1.1" 200 549
+INFO 2025-08-31 19:45:24,586 basehttp 14127 6174552064 "GET /api/chat/conversations/0274b94e-b802-4aa2-aa2e-42be8d15e706/history/ HTTP/1.1" 200 2493
+INFO 2025-08-31 19:45:24,589 basehttp 14127 6124072960 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:45:24,589 basehttp 14127 6157725696 "GET /api/chat/folders/ HTTP/1.1" 200 2
+INFO 2025-08-31 19:45:24,598 basehttp 14127 6191951872 "GET /api/chat/conversations/ HTTP/1.1" 200 549
+INFO 2025-08-31 19:45:24,607 basehttp 14127 6174552064 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:52:54,327 basehttp 14127 6123499520 "GET /api/chat/conversations/0274b94e-b802-4aa2-aa2e-42be8d15e706/history/ HTTP/1.1" 200 2493
+INFO 2025-08-31 19:52:54,329 basehttp 14127 6140325888 "GET /api/files/?page=1 HTTP/1.1" 200 2320
+INFO 2025-08-31 19:52:59,303 basehttp 14127 6140325888 "GET /api/chat/conversations/0274b94e-b802-4aa2-aa2e-42be8d15e706/history/ HTTP/1.1" 200 2493
+INFO 2025-08-31 19:52:59,310 basehttp 14127 6123499520 "GET /api/files/?page=1 HTTP/1.1" 200 2320

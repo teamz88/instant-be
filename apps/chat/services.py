@@ -46,7 +46,7 @@ class AIService:
                 'sources': rag_result['sources'],
                 'tokens_used': tokens_used,
                 'response_time_ms': response_time_ms,
-                'model_used': 'rag-junkgpt-ai',
+                'model_used': 'rag-instant-ai',
                 'success': True,
                 'error': None
             }
@@ -87,7 +87,7 @@ class AIService:
                 # Add metadata to each chunk
                 chunk.update({
                     'response_time_ms': response_time_ms,
-                    'model_used': 'rag-junkgpt-ai',
+                    'model_used': 'rag-instant-ai',
                     'success': chunk.get('type') != 'error',
                     'error': chunk.get('error')
                 })
@@ -116,14 +116,13 @@ class AIService:
     def _call_rag_api(self, message: str, conversation_history: list = None) -> Dict[str, Any]:
         """Call external RAG API to get AI response and sources (non-streaming)."""
         try:
-            url = "https://devrag.junkgpt.com/ask-question/"
+            url = "https://n8n.omadligrouphq.com/webhook/b1d1a7e1-d8e2-4fc8-ba74-486e5a07e757"
             headers = {
                 "Content-Type": "application/json"
             }
             
-            # Format conversation history according to the required structure
-            question_data = self._format_conversation_for_api(message, conversation_history)
-            data = {"question": question_data}
+            # Send only the current user message to webhook
+            data = {"message": message}
 
             
             response = requests.post(url, json=data, headers=headers, timeout=30)
@@ -131,9 +130,22 @@ class AIService:
             
             result = response.json()
             
-            # Extract response from different possible field names
-            ai_response = result.get('final_answer')
-            source_document = result.get('source_document', '')
+            # Handle new webhook response format - array of objects
+            if isinstance(result, list) and len(result) > 0:
+                response_item = result[0]  # Get first item from array
+                ai_response = response_item.get('content', '')
+                
+                # Extract document names from Document Names field
+                sources = []
+                if 'Document Names' in response_item:
+                    document_names = response_item['Document Names']
+                    if isinstance(document_names, list):
+                        sources = document_names
+            else:
+                # Handle old format for backward compatibility
+                ai_response = result.get('final_answer')
+                source_document = result.get('source_document', '')
+                sources = self._extract_sources_from_document(source_document)
             
             if not ai_response:
                 logger.warning(f"No response found in RAG API result: {result}")
@@ -141,9 +153,6 @@ class AIService:
                     'response': "I apologize, but I couldn't generate a proper response. Please try again.",
                     'sources': []
                 }
-            
-            # Process source_document to extract document names
-            sources = self._extract_sources_from_document(source_document)
             
             # Convert HTML to Markdown for better frontend rendering
             markdown_response = md(ai_response, heading_style="ATX", bullets="-")
@@ -155,15 +164,7 @@ class AIService:
             
         except requests.exceptions.RequestException as e:
             logger.error(f"RAG API request failed: {str(e)}")
-            error_response = """## Apologies, but that question seems too general or outside my trained scope based on internal documents.
-
-**Here are some ways I can provide more helpful answers:**
-
-*   "What follow-up processes should managers implement after GSR meetings?"
-*   "Can you give a detailed example of a weekly rhythm using the GSR framework?"
-*   "How should a junk removal leadership team structure Vivid Vision planning?"
-
-Try rephrasing your question with specific business context or terminology from our playbooks — I'm here to deliver executive-level insights!"""
+            error_response = """## Apologies, but that question seems too general or outside my trained scope based on internal documents."""
             
             return {
                 'response': error_response,
@@ -171,15 +172,7 @@ Try rephrasing your question with specific business context or terminology from 
             }
         except Exception as e:
             logger.error(f"RAG API processing error: {str(e)}")
-            error_response = """## Apologies, but that question seems too general or outside my trained scope based on internal documents.
-
-**Here are some ways I can provide more helpful answers:**
-
-*   "What follow-up processes should managers implement after GSR meetings?"
-*   "Can you give a detailed example of a weekly rhythm using the GSR framework?"
-*   "How should a junk removal leadership team structure Vivid Vision planning?"
-
-Try rephrasing your question with specific business context or terminology from our playbooks — I'm here to deliver executive-level insights!"""
+            error_response = """## Apologies, but that question seems too general or outside my trained scope based on internal documents."""
             
             return {
                 'response': error_response,
@@ -189,102 +182,74 @@ Try rephrasing your question with specific business context or terminology from 
     def _call_rag_api_stream(self, message: str, conversation_history: list = None) -> Iterator[Dict[str, Any]]:
         """Call external RAG API to get streaming AI response and sources."""
         try:
-            url = "https://devrag.junkgpt.com/ask-question/"
+            url = "https://n8n.omadligrouphq.com/webhook/b1d1a7e1-d8e2-4fc8-ba74-486e5a07e757"
             headers = {
                 "Content-Type": "application/json",
                 "Accept": "text/event-stream"
             }
             
-            # Format conversation history according to the required structure
-            question_data = self._format_conversation_for_api(message, conversation_history)
-            data = {"question": question_data}
+            # Send only the current user message to webhook
+            data = {"message": message}
             
-            response = requests.post(url, json=data, headers=headers, timeout=60, stream=True)
+            response = requests.post(url, json=data, headers=headers, timeout=60)
             response.raise_for_status()
             
-            accumulated_response = ""
-            sources = []
-            line_count = 0
+            result = response.json()
             
-            for line in response.iter_lines(decode_unicode=True):
-                line_count += 1
+            # Handle new webhook response format - array of objects
+            if isinstance(result, list) and len(result) > 0:
+                response_item = result[0]  # Get first item from array
                 
-                if line:
-                    # Handle Server-Sent Events format
-                    if line.startswith('data: '):
-                        data_content = line[6:]  # Remove 'data: ' prefix
-                        
-                        if data_content.strip() == '[DONE]':
-                            # Final event - yield complete response
-                            markdown_response = md(accumulated_response, heading_style="ATX", bullets="-")
-                            yield {
-                                'type': 'complete',
-                                'response': markdown_response,
-                                'sources': sources,
-                                'accumulated_response': accumulated_response
-                            }
-                            break
-                        
-                        try:
-                            # Try to parse as JSON
-                            json_data = json.loads(data_content)
-                            
-                            # Handle the actual API response format
-                            if 'content' in json_data and json_data.get('type') == 'update':
-                                # This is a delta response with content
-                                delta_text = json_data['content']
-                                accumulated_response += delta_text
-
-                                yield {
-                                    'type': 'delta',
-                                    'content': delta_text
-                                }
-                            
-                            if json_data.get('type') == 'sources':
-                                # This is source information
-                                source_doc = json_data['content']
-                                logger.info(f"Source document: {source_doc}")
-                                
-                                # Extract document names from source string into list format
-                                if source_doc.startswith("Sources: "):
-                                    # Remove "Sources: " prefix and split by comma
-                                    sources_text = source_doc.replace("Sources: ", "")
-                                    document_list = [doc.strip() for doc in sources_text.split(",")]
-                                    logger.info(f"Extracted document list: {document_list}")
-                                    
-                                    # Add each document to sources if not already present
-                                    for doc in document_list:
-                                        if doc not in sources:
-                                            sources.append(doc)
-                                else:
-                                    # Handle single source document
-                                    if source_doc not in sources:
-                                        sources.append(source_doc)
-                                    
-                                yield {
-                                    'type': 'source_document',
-                                    'source': sources
-                                }
-                                    
-                        except json.JSONDecodeError as e:
-                            # If not JSON, treat as plain text streaming
-                            logger.debug(f"JSON decode error: {e}, treating as plain text: {data_content[:100] if data_content else 'EMPTY'}")
-                            accumulated_response += data_content
-                            yield {
-                                'type': 'delta',
-                                'content': data_content
-                            }
-            
-            logger.info(f"Finished processing {line_count} lines")
-            
-            # If we have accumulated response but no final complete event was sent
-            if accumulated_response:
-                markdown_response = md(accumulated_response, heading_style="ATX", bullets="-")
+                # Extract content from the response
+                if 'content' in response_item:
+                    content = response_item['content']
+                    
+                    # Stream the content character by character or word by word
+                    words = content.split(' ')
+                    accumulated_text = ""
+                    
+                    for word in words:
+                        accumulated_text += word + " "
+                        yield {
+                            'type': 'delta',
+                            'content': word + " "
+                        }
+                    
+                    # Extract document names from Document Names field
+                    sources = []
+                    if 'Document Names' in response_item:
+                        document_names = response_item['Document Names']
+                        if isinstance(document_names, list):
+                            sources = document_names
+                    
+                    # Yield sources
+                    if sources:
+                        yield {
+                            'type': 'source_document',
+                            'source': sources
+                        }
+                    
+                    # Convert HTML to Markdown for better frontend rendering
+                    markdown_response = md(content, heading_style="ATX", bullets="-")
+                    
+                    # Final complete response
+                    yield {
+                        'type': 'complete',
+                        'response': markdown_response,
+                        'sources': sources,
+                        'accumulated_response': content
+                    }
+                else:
+                    # No content found
+                    yield {
+                        'type': 'error',
+                        'error': 'No content found in webhook response'
+                    }
+            else:
+                # Invalid response format
                 yield {
-                    'type': 'complete',
-                    'response': markdown_response,
-                    'sources': sources,
-                    'accumulated_response': accumulated_response
+                    'type': 'error',
+                    'error': 'Invalid webhook response format'
                 }
 
         except requests.exceptions.RequestException as e:
@@ -757,7 +722,7 @@ class FeedbackService:
     """Service for handling feedback interactions with RAG API."""
     
     def __init__(self):
-        self.rag_base_url = "https://devrag.junkgpt.com"
+        self.rag_base_url = "https://n8n.omadligrouphq.com"
     
     def submit_thumbs_feedback(self, question: str, answer: str, feedback_type: str, comment: str = None) -> Dict[str, Any]:
         """Submit thumbs up/down feedback to RAG API.
@@ -816,27 +781,29 @@ class FeedbackService:
             }
     
     def _call_rag_feedback_api(self, feedback_data: Dict[str, Any]) -> Dict[str, Any]:
-        """Call RAG API feedback endpoint."""
+        """Call RAG API feedback endpoint (legacy support only)."""
         try:
+            # Only send to original RAG API for backward compatibility
+            # Webhook is now handled in FeedbackView to avoid duplication
             url = f"{self.rag_base_url}/feedback/"
-            headers = {
-                "Content-Type": "application/json"
-            }
+            response = requests.post(
+                url,
+                json=feedback_data,
+                timeout=30
+            )
             
-            response = requests.post(url, json=feedback_data, headers=headers, timeout=30)
-            response.raise_for_status()
-            
-            result = response.json()
-            logger.info(f"Feedback submitted successfully to RAG API: {result}")
-            
-            return result
-            
+            if response.status_code == 200:
+                logger.info(f"Feedback submitted successfully to RAG API")
+                return response.json()
+            else:
+                logger.error(f"Failed to submit feedback to RAG API: {response.status_code}")
+                return None
+                
         except requests.exceptions.RequestException as e:
-            logger.error(f"RAG API feedback request failed: {str(e)}")
-            raise Exception(f"Failed to submit feedback to RAG service: {str(e)}")
-        except Exception as e:
-            logger.error(f"RAG API feedback processing error: {str(e)}")
-            raise Exception(f"Error processing feedback submission: {str(e)}")
+            logger.error(f"Error calling RAG feedback API: {str(e)}")
+            return None
+    
+
     
     def get_feedback_analytics(self, date_from: str = None, date_to: str = None) -> Dict[str, Any]:
         """Get feedback analytics from RAG API.
@@ -849,7 +816,7 @@ class FeedbackService:
             Dict containing feedback analytics data
         """
         try:
-            url = f"{self.rag_base_url}/feedback/analytics/"
+            url = "https://n8n.omadligrouphq.com/webhook/8ab1aff6-af35-4fd3-8098-eceedfc97ac0"
             params = {}
             
             if date_from:
@@ -899,7 +866,7 @@ class FeedbackService:
             Dict containing filtered feedbacks data
         """
         try:
-            url = f"{self.rag_base_url}/feedbacks/"
+            url = "https://n8n.omadligrouphq.com/webhook/8ab1aff6-af35-4fd3-8098-eceedfc97ac0"
             params = {}
             
             if status is not None:

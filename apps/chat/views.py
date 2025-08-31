@@ -362,40 +362,92 @@ class FeedbackView(APIView):
     permission_classes = [permissions.IsAuthenticated]
     
     def post(self, request):
-        """Submit feedback with question, answer, and comment to RAG API."""
-        question = request.data.get('question', '')
-        answer = request.data.get('answer', '')
+        """Submit feedback with question, answer, and comment to RAG API and webhook."""
+        # Get all data from request
+        user_question = request.data.get('userQuestion', request.data.get('question', ''))
+        content = request.data.get('content', request.data.get('answer', ''))
+        sources = request.data.get('sources', [])
+        action = request.data.get('action', '')
+        message_id = request.data.get('messageId', '')
+        timestamp = request.data.get('timestamp', '')
+        formatted_report = request.data.get('formattedReport', '')
         comment = request.data.get('comment', '')
+        
+        # Legacy support for old format
+        question = user_question or request.data.get('question', '')
+        answer = content or request.data.get('answer', '')
         
         if not question or not answer:
             return Response({
                 'error': 'Question and answer are required'
             }, status=status.HTTP_400_BAD_REQUEST)
         
-        # Determine feedback type based on comment
-        feedback_type = 'thumbs_up' if comment == 'thumb up' else 'thumbs_down'
+        # Determine feedback type based on comment or action
+        if action:
+            feedback_type = 'thumbs_up' if action == 'Good Response' else 'thumbs_down'
+        else:
+            feedback_type = 'thumbs_up' if comment == 'thumb up' else 'thumbs_down'
         
-        # Use FeedbackService to submit to RAG API
+        # Set action based on feedback_type for webhook
+        webhook_action = 'Good Response' if feedback_type == 'thumbs_up' else 'Bad Response'
+        
+        # Send to webhook first
+        import requests
+        import logging
+        logger = logging.getLogger(__name__)
+        
+        try:
+            webhook_url = "https://n8n.omadligrouphq.com/webhook/8ab1aff6-af35-4fd3-8098-eceedfc97ac0"
+            webhook_data = {
+                'userQuestion': user_question,
+                'content': content,
+                'sources': sources,
+                'action': webhook_action,
+                'messageId': message_id,
+                'timestamp': timestamp,
+                'formattedReport': formatted_report,
+                'feedback_type': feedback_type,
+                'user_id': request.user.id if request.user.is_authenticated else None
+            }
+            
+            webhook_response = requests.post(
+                webhook_url,
+                json=webhook_data,
+                timeout=10
+            )
+            
+            if webhook_response.status_code == 200:
+                logger.info(f"Webhook feedback sent successfully: {message_id}")
+            else:
+                logger.warning(f"Webhook feedback failed with status {webhook_response.status_code}: {message_id}")
+                
+        except Exception as webhook_error:
+            logger.error(f"Webhook feedback error: {str(webhook_error)}")
+            # Don't fail the request if webhook fails
+        
+        # Use FeedbackService to submit to RAG API (legacy support)
         feedback_service = FeedbackService()
         result = feedback_service.submit_thumbs_feedback(
             question=question,
             answer=answer,
             feedback_type=feedback_type,
-            comment=comment
+            comment=comment or action
         )
         
         if result['success']:
             return Response({
-                'message': 'Feedback submitted successfully to RAG API',
+                'message': 'Feedback submitted successfully to RAG API and webhook',
                 'feedback_type': result['feedback_type'],
                 'response_time_ms': result['response_time_ms'],
-                'rag_response': result['response']
+                'rag_response': result['response'],
+                'webhook_sent': True
             }, status=status.HTTP_201_CREATED)
         else:
             return Response({
                 'error': 'Failed to submit feedback to RAG API',
                 'details': result['error'],
-                'response_time_ms': result['response_time_ms']
+                'response_time_ms': result['response_time_ms'],
+                'webhook_sent': True
             }, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
 
 
